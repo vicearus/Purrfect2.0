@@ -75,7 +75,7 @@ const startApolloServer = async (typeDefs, resolvers) => {
   apolloServer.applyMiddleware({ app });
 
   db.once("open", () => {
-    app.listen(PORT, () => {
+    server.listen(PORT, () => {
       // Set to server.listen to allow socket.io connection
       console.log(`Server is listening on port ${PORT}`);
       console.log(
