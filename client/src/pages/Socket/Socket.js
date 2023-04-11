@@ -5,7 +5,7 @@ import { QUERY_ME } from '../../utils/queries';
 
 // Import socket.io-client dependencies
 import io from 'socket.io-client';
-const socket = io.connect('http://localhost:3000') // Change connection url to deployed link when deployed
+const socket = io.connect('http://localhost:3001') // Change connection url to deployed link when deployed
 
 function Socket() {
     const [roomId, setRoomId] = useState('');
